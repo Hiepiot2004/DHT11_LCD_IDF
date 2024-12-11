@@ -1,0 +1,694 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2024 21:19:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2d8h ( 45784) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b300 vaddr=3ffb0000 size=022b4h (  8884) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d5bc vaddr=40080000 size=02a5ch ( 10844) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=194d8h (103640) map[0m
+[0;32mI (170) esp_image: segment 4: paddr=00039500 vaddr=40082a5c size=0b088h ( 45192) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (206) cpu_start: Multicore app[0m
+[0;32mI (216) cpu_start: Pro cpu start user code[0m
+[0;32mI (216) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (216) cpu_start: Application information:[0m
+[0;32mI (219) cpu_start: Project name:     main[0m
+[0;32mI (223) cpu_start: App version:      de4ec2b[0m
+[0;32mI (228) cpu_start: Compile time:     Dec 11 2024 21:18:14[0m
+[0;32mI (234) cpu_start: ELF file SHA256:  bacc4d73b...[0m
+[0;32mI (240) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (245) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (250) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (255) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (267) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB2BA0 len 0002D460 (181 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (285) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 4008DAE4 len 0001251C (73 KiB): IRAM[0m
+[0;32mI (299) spi_flash: detected chip: generic[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;33mW (307) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (320) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) LCD: I2C initialized successfully[0m
+[0;32mI (341) main_task: Returned from app_main()[0m
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 56.0% Temp: 23.0C
+Humidity: 65.0% Temp: 23.0C
+Humidity: 71.0% Temp: 24.0C
+Humidity: 76.0% Temp: 24.0C
+Humidity: 77.0% Temp: 24.0C
+Humidity: 78.0% Temp: 24.0C
+Humidity: 78.0% Temp: 24.0C
+Humidity: 77.0% Temp: 24.0C
+Humidity: 76.0% Temp: 24.0C
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2024 21:19:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2d8h ( 45784) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b300 vaddr=3ffb0000 size=022b4h (  8884) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d5bc vaddr=40080000 size=02a5ch ( 10844) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=194d8h (103640) map[0m
+[0;32mI (170) esp_image: segment 4: paddr=00039500 vaddr=40082a5c size=0b088h ( 45192) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (206) cpu_start: Multicore app[0m
+[0;32mI (216) cpu_start: Pro cpu start user code[0m
+[0;32mI (216) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (216) cpu_start: Application information:[0m
+[0;32mI (219) cpu_start: Project name:     main[0m
+[0;32mI (223) cpu_start: App version:      de4ec2b[0m
+[0;32mI (228) cpu_start: Compile time:     Dec 11 2024 21:18:14[0m
+[0;32mI (234) cpu_start: ELF file SHA256:  bacc4d73b...[0m
+[0;32mI (240) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (245) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (250) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (255) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (267) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB2BA0 len 0002D460 (181 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (285) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 4008DAE4 len 0001251C (73 KiB): IRAM[0m
+[0;32mI (299) spi_flash: detected chip: generic[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;33mW (307) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (320) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) LCD: I2C initialized successfully[0m
+[0;32mI (341) main_task: Returned from app_main()[0m
+Humidity: 74.0% Temp: 24.0C
+Humidity: 73.0% Temp: 24.0C
+Humidity: 71.0% Temp: 24.0C
+Humidity: 70.0% Temp: 24.0C
+Humidity: 69.0% Temp: 24.0C
+Humidity: 67.0% Temp: 24.0C
+Humidity: 64.0% Temp: 25.0C
+Humidity: 62.0% Temp: 25.0C
+Humidity: 61.0% Temp: 25.0C
+Humidity: 60.0% Temp: 25.0C
+Humidity: 59.0% Temp: 25.0C
+Humidity: 60.0% Temp: 24.0C
+Humidity: 59.0% Temp: 24.0C
+Humidity: 58.0% Temp: 24.0C
+Humidity: 58.0% Temp: 24.0C
+Humidity: 57.0% Temp: 24.0C
+Humidity: 57.0% Temp: 24.0C
+Humidity: 56.0% Temp: 24.0C
+Humidity: 56.0% Temp: 24.0C
+Humidity: 55.0% Temp: 24.0C
+Humidity: 55.0% Temp: 24.0C
+Humidity: 55.0% Temp: 24.0C
+Humidity: 55.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 52.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+[0;32mI (156751) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (156751) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (156751) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (156761) LCD: Error -1 while sending data to LCD[0m
+Humidity: 53.0% Temp: 23.0C
+[0;32mI (158791) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (158791) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158791) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158801) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158801) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158811) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158811) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158821) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158821) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158831) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158831) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158841) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158841) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158851) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158861) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158861) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158871) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (158871) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158881) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158881) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158891) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158891) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158901) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158901) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158911) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158921) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158921) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (158931) LCD: Error -1 while sending data to LCD[0m
+Humidity: 53.0% Temp: 23.0C
+[0;32mI (160951) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (160951) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (160951) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (160961) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (160961) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (160971) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (160971) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (160981) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (160981) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (160991) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (160991) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161001) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161001) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161011) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161021) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161021) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161031) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (161031) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161041) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161041) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161051) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161051) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161061) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161061) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161071) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161081) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161081) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (161091) LCD: Error -1 while sending data to LCD[0m
+Humidity: 53.0% Temp: 23.0C
+[0;32mI (163111) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (163111) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163111) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163121) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163121) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163131) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163131) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163141) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163141) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163151) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163151) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163161) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163161) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163171) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163181) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163181) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163191) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (163191) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163201) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163201) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163211) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163211) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163221) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163221) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163231) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163241) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163241) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (163251) LCD: Error -1 while sending data to LCD[0m
+Humidity: 53.0% Temp: 23.0C
+[0;32mI (165271) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (165271) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165271) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165281) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165281) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165291) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165291) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165301) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165301) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165311) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165311) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165321) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165321) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165331) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165341) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165341) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165351) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (165351) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165361) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165361) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165371) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165371) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165381) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165381) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165391) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165401) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165401) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (165411) LCD: Error -1 while sending data to LCD[0m
+Humidity: 53.0% Temp: 23.0C
+[0;32mI (167431) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (167431) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167431) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167441) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167441) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167451) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167451) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167461) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167461) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167471) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167471) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167481) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167481) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167491) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167501) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167501) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167511) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (167511) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167521) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167521) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167531) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167531) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167541) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167551) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167551) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167561) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167561) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (167571) LCD: Error -1 while sending data to LCD[0m
+Humidity: 53.0% Temp: 23.0C
+[0;32mI (169591) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (169591) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169591) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169601) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169601) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169611) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169611) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169621) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169621) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169631) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169631) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169641) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169641) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169651) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169661) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169661) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169671) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (169671) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169681) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169681) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169691) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169691) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169701) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169701) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169711) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169721) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169721) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (169731) LCD: Error -1 while sending data to LCD[0m
+Humidity: 53.0% Temp: 23.0C
+[0;32mI (171751) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (171751) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171751) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171761) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171761) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171771) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171771) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171781) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171781) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171791) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171791) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171801) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171801) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171811) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171821) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171821) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171831) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (171831) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171841) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171841) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171851) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171851) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171861) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171861) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171871) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171881) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171881) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (171891) LCD: Error -1 while sending data to LCD[0m
+Humidity: 53.0% Temp: 23.0C
+[0;32mI (173911) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (173911) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173911) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173921) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173921) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173931) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173931) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173941) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173941) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173951) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173951) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173961) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173961) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173971) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173981) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173981) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (173991) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (173991) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (174001) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (174001) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (174011) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (174011) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (174021) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (174021) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (174031) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (174041) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (174041) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (174051) LCD: Error -1 while sending data to LCD[0m
+Humidity: 53.0% Temp: 23.0C
+[0;32mI (176071) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (176071) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176071) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176081) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176081) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176091) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176091) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176101) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176101) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176111) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176111) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176121) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176121) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176131) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176141) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176141) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176151) LCD: Error -1 while sending command to LCD[0m
+[0;32mI (176151) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176161) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176161) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176171) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176171) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176181) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176181) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176191) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176201) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176201) LCD: Error -1 while sending data to LCD[0m
+[0;32mI (176211) LCD: Error -1 while sending data to LCD[0m
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2024 21:19:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2d8h ( 45784) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b300 vaddr=3ffb0000 size=022b4h (  8884) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d5bc vaddr=40080000 size=02a5ch ( 10844) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=194d8h (103640) map[0m
+[0;32mI (170) esp_image: segment 4: paddr=00039500 vaddr=40082a5c size=0b088h ( 45192) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (206) cpu_start: Multicore app[0m
+[0;32mI (216) cpu_start: Pro cpu start user code[0m
+[0;32mI (216) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (216) cpu_start: Application information:[0m
+[0;32mI (219) cpu_start: Project name:     main[0m
+[0;32mI (223) cpu_start: App version:      de4ec2b[0m
+[0;32mI (228) cpu_start: Compile time:     Dec 11 2024 21:18:14[0m
+[0;32mI (234) cpu_start: ELF file SHA256:  bacc4d73b...[0m
+[0;32mI (240) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (245) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (250) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (255) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (267) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB2BA0 len 0002D460 (181 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (285) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 4008DAE4 len 0001251C (73 KiB): IRAM[0m
+[0;32mI (299) spi_flash: detected chip: generic[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;33mW (307) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (320) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) LCD: I2C initialized successfully[0m
+[0;32mI (341) main_task: Returned from app_main()[0m
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 53.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C

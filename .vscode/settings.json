@@ -1,0 +1,7 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "files.associations": {
+    "i2c.h": "c",
+    "unistd.h": "c"
+  }
+}

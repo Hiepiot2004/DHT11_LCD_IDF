@@ -1,0 +1,9 @@
+CMake Error at D:/Hiep/esp32/Espressif/frameworks/esp-idf-v5.2.3/tools/cmake/build.cmake:268 (message):
+  Failed to resolve component 'esp_idf_lib_helpers'.
+Call Stack (most recent call first):
+  D:/Hiep/esp32/Espressif/frameworks/esp-idf-v5.2.3/tools/cmake/build.cmake:304 (__build_resolve_and_add_req)
+  D:/Hiep/esp32/Espressif/frameworks/esp-idf-v5.2.3/tools/cmake/build.cmake:607 (__build_expand_requirements)
+  D:/Hiep/esp32/Espressif/frameworks/esp-idf-v5.2.3/tools/cmake/project.cmake:605 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+
